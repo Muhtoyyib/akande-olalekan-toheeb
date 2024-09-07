@@ -1,21 +1,17 @@
-import localFont from "next/font/local";
 import { Caveat } from "next/font/google";
+import { Architects_Daughter } from "next/font/google";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 const caveat = Caveat({
   subsets: ["latin"],
   variable: "--font-caveat",
+});
+
+const archictects_dauughter = Architects_Daughter({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
+  variable: "--font-architects-daughter",
 });
 
 export const metadata = {
@@ -26,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={caveat.className}>{children}</body>
+      <body className={archictects_dauughter.className}>{children}</body>
     </html>
   );
 }
