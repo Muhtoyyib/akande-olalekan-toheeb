@@ -19,49 +19,54 @@ const About = () => {
       behavior: "smooth",
     });
   };
-
   return (
     <>
       <div className={`${showModal ? "blur-sm" : ""} overflow-hidden`}>
         <Navigation />
         {/* Scroll Container */}
-        <div className="scroll-container" data-aos="zoom-in-up">
+        <div
+          className="scroll-container relative md:mt-[130px] mt-[80px] flex w-[200%]"
+          data-aos="zoom-in-up"
+        >
           <div>
             {" "}
-            <h1 className="text-[65px] flex gap-10 items-center uppercase">
+            <h1 className="md:text-[65px] text-[18] flex md:gap-10 gap-2 items-center uppercase">
               Creating seamless user journeys{" "}
-              <Aperture size={80} color="#9ae300" />
+              <Aperture size={40} color="#9ae300" />
             </h1>
           </div>
           <div>
             {" "}
-            <h1 className="text-[65px] flex gap-10 items-center uppercase">
+            <h1 className="md:text-[65px] text-[18] flex md:gap-10 gap-2 items-center uppercase">
               Creating seamless user journeys{" "}
-              <Aperture size={80} color="#9ae300" />
+              <Aperture size={40} color="#9ae300" />
             </h1>
           </div>
         </div>
 
         {/* Scroll Reverse */}
-        <div className="scroll-container-reverse mt-32" data-aos="zoom-in-up">
+        <div
+          className="scroll-container-reverse md:-mt-[20px] -mt-[10px] flex w-[200%]"
+          data-aos="zoom-in-up"
+        >
           <div>
             {" "}
-            <h1 className="text-[65px] uppercase flex gap-10 items-center">
+            <h1 className="md:text-[65px] text-[18] uppercase flex md:gap-10 gap-2 items-center">
               Creating seamless user journeys{" "}
-              <Aperture size={80} color="#9ae300" />
+              <Aperture size={40} color="#9ae300" />
             </h1>
           </div>
           <div>
             {" "}
-            <h1 className="text-[65px] uppercase flex gap-10 items-center">
+            <h1 className="md:text-[65px] text-[18] uppercase flex md:gap-10 gap-2 items-center">
               Creating seamless user journeys{" "}
-              <Aperture size={80} color="#9ae300" />
+              <Aperture size={40} color="#9ae300" />
             </h1>
           </div>
         </div>
 
         {/* About  */}
-        <div className="w-full px-10 flex flex-col justify-between md:flex-row space-x-16 mt-36">
+        <div className="w-full px-10 flex flex-col md:justify-between justify-center md:flex-row md:space-x-16 md:mt-36 mt-20 md:space-y-0 space-y-10">
           <div className="basis-[40%] space-y-5" data-aos="zoom-in-up">
             <Image src={`/Images/akande.svg`} width={400} height={400} alt="" />
 
@@ -75,7 +80,10 @@ const About = () => {
             </div>
           </div>
 
-          <div className="basis-[60%] space-y-10" data-aos="zoom-in-up">
+          <div
+            className="md:basis-[60%] basis-[100%] space-y-10"
+            data-aos="zoom-in-up"
+          >
             <h2 className="text-3xl leading-[40px]">
               As a frontend developer, technical writer, and AWS cloud engineer,
               I specialize in creating innovative digital solutions.
@@ -114,14 +122,14 @@ const About = () => {
         {/* CTA */}
         <div className="mt-24 px-10 relative">
           <h2
-            className="text-center pb-1 text-3xl border-b border-b-[#868e96] mb-14 w-[15%] mx-auto"
+            className="text-center pb-1 text-3xl border-b border-b-[#868e96] mb-14 md:w-[15%] w-full mx-auto"
             data-aos="zoom-in-up"
           >
             Schedule a call
           </h2>
 
           <h3
-            className="text-[85px] leading-[85px] w-[70%]"
+            className="md:text-[85px] md:leading-[85px] text-[45px] md:w-[70%] w-full"
             data-aos="zoom-in-up"
           >
             Turning Ideas into Reality with fine design and development. Got a
@@ -131,8 +139,8 @@ const About = () => {
           <button
             data-aos="zoom-in-up"
             type="button"
-            className="text-[var(--nav-color)] flex items-center text-[100px] gap-x-1 mt-10 mr-10 
-        float-right hover:border-b-2 hover:border-b-[var(--foreground)] hover:text-[var(--foreground)]"
+            className="text-[var(--nav-color)] flex items-center md:text-[100px] text-[40px] md:gap-x-1 gap-x-2 md:mt-10 md:mr-10 mt-12
+        md:float-right hover:border-b-2 hover:border-b-[var(--foreground)] hover:text-[var(--foreground)]"
             onClick={handleShowModal}
           >
             <ArrowRight
@@ -143,7 +151,7 @@ const About = () => {
           </button>
         </div>
 
-        <div className="mt-52">
+        <div className="md:mt-52 mt-28">
           <Footer />
         </div>
       </div>

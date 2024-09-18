@@ -12,7 +12,7 @@ const HomeComponent = () => {
 
       <div className="mt-32 px-10">
         <h3
-          className="text-[70px] leading-[75px] w-[70%]"
+          className="md:text-[70px] md:leading-[75px] md:w-[70%] w-full text-[50px] md:text-left text-center"
           data-aos="zoom-in-up"
         >
           I am Akande Olalekan Toheeb - A Front-end Developer and Technical
@@ -21,7 +21,7 @@ const HomeComponent = () => {
 
         <div className=" py-5 mx-auto my-0 mt-10 space-y-14">
           <div
-            className="flex flex-col md:flex-row justify-center md:gap-10 items-center space-x-5"
+            className="flex flex-col md:flex-row justify-center md:gap-10 items-center md:space-x-5 space-y-10 md:space-y-0"
             data-aos="zoom-in-up"
           >
             <Image src={`/Images/dp.webp`} width={150} height={150} alt="" />

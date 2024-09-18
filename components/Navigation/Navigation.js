@@ -3,17 +3,17 @@ import Link from "next/link";
 
 const Navigation = () => {
   return (
-    <div className="fixed w-full px-10 py-5 flex justify-between items-start bg-[var(--background)] z-10 -mt-10 border-b border-b-[var(--nav-border)]">
+    <div className="fixed w-full md:px-10 px-5 py-5 flex justify-between items-start bg-[var(--background)] z-10 -mt-10 border-b border-b-[var(--nav-border)]">
       <div>
         <Link href={`/`}>
-          <span className="text-[var(--nav-color)] text-4xl">
+          <span className="text-[var(--nav-color)] md:text-4xl text-3xl">
             M<span className="text-[var(--nav-hover)]">uh.Toyyib</span>
           </span>
         </Link>
       </div>
 
       <div>
-        <ul className="flex space-x-5">
+        <ul className="md:flex space-x-5 hidden">
           <li className="mb-2">
             <Link
               className=" text-[20px] text-[var(--nav-color)] pb-[1px] tracking-wider border-b border-b-[var(--nav-color)]  hover:border-b-[var(--nav-hover)] hover:text-[var(--nav-hover)] hover:font-[900] font-bold"
