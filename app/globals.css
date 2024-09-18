@@ -3,14 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #f1f3f5;
+  --background-reverse: #fff;
   --foreground: #495057;
+  --nav-hover: #212529;
+  --nav-hover-text: #ced4da;
+  --nav-color: #6400c9;
+  --faded-text: #495057;
+  --color-cta: #9ae300;
+  --nav-border: #ced4da;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #212529;
+    --background-reverse: #343a40;
     --foreground: #ededed;
+    --nav-hover: #ced4da;
+    --nav-hover-text: #212529;
+    --nav-color: #9ae300;
+    --faded-text: #adb5bd;
+    --color-cta: #6400c9;
+    --nav-border: #495057;
   }
 }
 
@@ -18,11 +32,45 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  padding: 40px 0px;
+  padding: 40px 0px 0px 0px;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.scroll-container {
+  position: relative;
+  margin-top: 130px;
+  animation: scroll-horizontal 20s linear infinite;
+  display: flex;
+  width: 200%;
+}
+
+.scroll-container-reverse {
+  position: relative;
+  margin-top: -20px;
+  animation: scroll-horizontal-reverse 20s linear infinite;
+  display: flex;
+  width: 200%;
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes scroll-horizontal-reverse {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(-100vw);
   }
 }
