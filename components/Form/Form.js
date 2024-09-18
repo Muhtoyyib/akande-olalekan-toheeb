@@ -48,7 +48,7 @@ const Form = () => {
 
       <form onSubmit={handleSubmit}>
         {/* Name */}
-        <div className="flex justify-between py-4 px-7 bg-[var(--background-reverse)] rounded-lg text-[20px] mb-5">
+        <div className="flex justify-between py-4 px-7 bg-[var(--background-reverse)] rounded-lg md:text-[20px] text-[12px] mb-5">
           <label htmlFor="first_name">First Name</label>
           <input
             type="text"
@@ -60,7 +60,7 @@ const Form = () => {
         </div>
 
         {/* Company */}
-        <div className="flex justify-between py-4 px-7 bg-[var(--background-reverse)] rounded-lg text-[20px] mb-5">
+        <div className="flex justify-between py-4 px-7 bg-[var(--background-reverse)] rounded-lg md:text-[20px] text-[12px] mb-5">
           <label htmlFor="last_name">Last Name</label>
           <input
             type="text"
@@ -72,7 +72,7 @@ const Form = () => {
         </div>
 
         {/* Email */}
-        <div className="flex justify-between py-4 px-7 bg-[var(--background-reverse)] rounded-lg text-[20px] mb-5">
+        <div className="flex justify-between py-4 px-7 bg-[var(--background-reverse)] rounded-lg md:text-[20px] text-[12px] mb-5">
           <label htmlFor="reply_to">Email</label>
           <input
             type="email"
@@ -84,7 +84,7 @@ const Form = () => {
         </div>
 
         {/* Message */}
-        <div className="py-4 px-7 bg-[var(--background-reverse)] rounded-lg text-[20px]">
+        <div className="py-4 px-7 bg-[var(--background-reverse)] rounded-lg md:text-[20px] text-[12px]">
           <label htmlFor="message" className="block mb-1">
             Message
           </label>
