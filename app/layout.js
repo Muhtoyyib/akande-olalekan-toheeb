@@ -17,6 +17,24 @@ const garamond = EB_Garamond({
 export const metadata = {
   title: "Akande Olalekan Toheeb",
   description: "Akande Olalekan Toheeb's Portfolio Website",
+  applicationName: "Akande Olalekan Toheeb's Portfolio Website",
+  referrer: "origin-when-cross-origin",
+  keywords: ["Front-end Development", "Technical Writing", "Cloud Engineering"],
+  authors: [{ name: "Akande Olalekan Toheeb" }],
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+    other: {
+      rel: "/favicon.ico",
+      url: "/favicon.ico",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
