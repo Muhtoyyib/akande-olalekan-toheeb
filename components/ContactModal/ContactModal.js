@@ -4,7 +4,7 @@ import { X } from "@phosphor-icons/react/dist/ssr";
 const ContactModal = ({ handleModal }) => {
   return (
     <div
-      className="md:w-[50%] w-full absolute right-0 top-0 h-screen bg-[var(--background)] border-l-2 border-l-[var(--background)] z-20 px-3 md:px-10 py-10"
+      className="md:w-[50%] w-full shadow-[0_0_2rem_0_rgba(0,0,0,0.1)] absolute right-0 top-0 h-screen bg-[var(--background)] border-l-2 border-l-[var(--background)] z-20 px-3 md:px-10 py-10"
       data-aos="fade-left"
     >
       {/* Header */}

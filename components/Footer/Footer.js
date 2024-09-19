@@ -8,8 +8,9 @@ const Footer = () => {
   return (
     <div className=" w-[95%] mx-auto border-t border-t-[#adb5bd] space-y-12">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mt-20 md:space-y-0 space-y-5">
-        <div className="flex flex-col md:flex-row md:items-center md:gap-x-12 md:space-y-0 space-y-5">
+        <div className="flex flex-col md:flex-row md:items-center md:gap-x-40 md:space-y-0 space-y-5">
           <ul className="block" data-aos="zoom-in-up">
+            <p className="text-[var(--nav-color)] text-3xl pb-3">Menu</p>
             <li>
               <Link
                 href={`/about`}
@@ -27,7 +28,7 @@ const Footer = () => {
                 href={`/blog`}
                 className={`block text-[var(--faded-text)] hover:text-[var(--nav-color)] text-[28px] pb-2 ${pathname === `/blog` ? "text-[var(--foreground)] font-extrabold" : ""}`}
               >
-                Project
+                Blog
               </Link>
               <Link
                 href={`/contact`}
@@ -39,9 +40,10 @@ const Footer = () => {
           </ul>
 
           <ul data-aos="zoom-in-up">
+            <p className="text-[var(--nav-color)] text-3xl pb-3">Socials</p>
             <li>
               <Link
-                href={`/https://github.com/Muhtoyyib`}
+                href={`https://github.com/Muhtoyyib`}
                 target="_blank"
                 className="block text-[var(--faded-text)] hover:text-[var(--nav-color)] text-[28px] pb-2"
               >
