@@ -1,13 +1,14 @@
 // ? Components
 import AOSInit from "@/components/AOS/AOSInit";
 import Navigation from "@/components/Navigation/Navigation";
-import Footer from "@/components/Footer/Footer";
+import Loader from "./Loader/Loader";
 
 //  ? Fonts
 import { EB_Garamond } from "next/font/google";
 
 // ? Stylesheet
 import "./globals.css";
+import { Suspense } from "react";
 
 const garamond = EB_Garamond({
   weight: "400",
@@ -45,7 +46,7 @@ export default function RootLayout({ children }) {
       <body className={garamond.className}>
         <AOSInit />
         <Navigation />
-        {children}
+        <Suspense fallback={<Loader />}>{children}</Suspense>
       </body>
     </html>
   );
