@@ -47,6 +47,7 @@ const Navigation = () => {
               <Link
                 className=" text-[20px] text-[var(--nav-color)] pb-[1px] tracking-wider border-b border-b-[var(--nav-color)]  hover:border-b-[var(--nav-hover)] hover:text-[var(--nav-hover)] hover:font-[900] font-bold"
                 href={`/about`}
+                onClick={toggleMenu}
               >
                 About
               </Link>
@@ -55,6 +56,7 @@ const Navigation = () => {
               <Link
                 className=" text-[20px] text-[var(--nav-color)] pb-[1px] tracking-wider  border-b border-b-[var(--nav-color)] hover:border-b-[var(--nav-hover)] hover:text-[var(--nav-hover)] hover:font-[900] font-bold"
                 href={`/projects`}
+                onClick={toggleMenu}
               >
                 Projects
               </Link>
@@ -63,6 +65,7 @@ const Navigation = () => {
               <Link
                 className=" text-[20px] text-[var(--nav-color)] pb-[1px] tracking-wider  border-b border-b-[var(--nav-color)] hover:border-b-[var(--nav-hover)] hover:text-[var(--nav-hover)] hover:font-[900] font-bold"
                 href={`/blog`}
+                onClick={toggleMenu}
               >
                 Blog
               </Link>
