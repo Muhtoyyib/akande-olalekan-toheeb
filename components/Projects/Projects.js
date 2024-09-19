@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-import Navigation from "../Navigation/Navigation";
 import Footer from "../Footer/Footer";
 import ContactModal from "../ContactModal/ContactModal";
 import ProjectCard from "../ProjectCards/ProjectCard";
@@ -80,8 +79,6 @@ const Projects = () => {
 
   return (
     <>
-      <Navigation />
-
       <div className={`${showModal ? "blur-sm" : ""} mt-36 px-10`}>
         <h3
           className="md:text-[100px] md:leading-[100px] w-full text-[50px] md:text-left text-center"

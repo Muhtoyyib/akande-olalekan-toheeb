@@ -26,7 +26,7 @@ const Navigation = () => {
 
   return (
     <>
-      <div className="fixed w-full md:px-10 px-5 py-5 flex justify-between items-start bg-[var(--background)] z-10 -mt-10 border-b border-b-[var(--nav-border)]">
+      <div className="fixed top-0 w-full md:px-10 px-5 py-5 flex justify-between items-start bg-[var(--background)] z-10 border-b border-b-[var(--nav-border)]">
         <div>
           <Link href={`/`}>
             <span className="text-[var(--nav-color)] md:text-4xl text-3xl">
