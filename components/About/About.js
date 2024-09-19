@@ -22,7 +22,6 @@ const About = () => {
   return (
     <>
       <div className={`${showModal ? "blur-sm" : ""} overflow-hidden`}>
-        <Navigation />
         {/* Scroll Container */}
         <div
           className="scroll-container relative md:mt-[130px] mt-[80px] flex w-[200%]"

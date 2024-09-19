@@ -83,7 +83,7 @@ const Footer = () => {
       </div>
 
       <h2
-        className="text-center md:text-[80px] text-[22px]"
+        className="text-center text-[var(--faded-text)] md:text-[80px] text-[22px]"
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
       >

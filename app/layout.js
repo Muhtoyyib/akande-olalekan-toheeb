@@ -1,5 +1,7 @@
 // ? Components
 import AOSInit from "@/components/AOS/AOSInit";
+import Navigation from "@/components/Navigation/Navigation";
+import Footer from "@/components/Footer/Footer";
 
 //  ? Fonts
 import { EB_Garamond } from "next/font/google";
@@ -40,8 +42,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <AOSInit />
-      <body className={garamond.className}>{children}</body>
+      <body className={garamond.className}>
+        <AOSInit />
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }

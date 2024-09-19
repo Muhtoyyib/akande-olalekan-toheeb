@@ -1,17 +1,28 @@
 "use client";
 
+import { useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import Navigation from "../Navigation/Navigation";
+import ContactModal from "../ContactModal/ContactModal";
 
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 
 const HomeComponent = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => {
+    setShowModal((prevState) => !prevState);
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
-      <Navigation />
-
       <div className="mt-32 px-10">
         <h3
           className="md:text-[70px] md:leading-[75px] md:w-[70%] w-full text-[50px] md:text-left text-center"
@@ -54,12 +65,12 @@ const HomeComponent = () => {
                 </Link>
               </li>
               <li className="mb-2">
-                <Link
+                <p
                   className=" text-[20px] pb-[1px] tracking-wider  border-b hover:border-b-[#9ae300] hover:text-[#9ae300] font-bold"
-                  href={`/contact`}
+                  onClick={handleShowModal}
                 >
                   Contact me
-                </Link>
+                </p>
               </li>
             </ul>
           </div>
@@ -88,6 +99,8 @@ const HomeComponent = () => {
           </p>
         </div>
       </div>
+
+      {showModal && <ContactModal handleModal={handleShowModal} />}
     </>
   );
 };
