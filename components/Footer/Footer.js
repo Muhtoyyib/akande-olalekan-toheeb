@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import ContactModal from "../ContactModal/ContactModal";
+import { useState } from "react";
 
 const Footer = () => {
   const pathname = usePathname();
