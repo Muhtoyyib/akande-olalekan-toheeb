@@ -79,9 +79,9 @@ const Projects = () => {
 
   return (
     <>
-      <div className={`${showModal ? "blur-sm" : ""} mt-36 px-10`}>
+      <div className={`${showModal ? "blur-sm" : ""} mt-36 `}>
         <h3
-          className="md:text-[100px] md:leading-[100px] w-full text-[50px] md:text-left text-center"
+          className="md:text-[100px] px-10 md:leading-[100px] w-full text-[50px] md:text-left text-center"
           data-aos="zoom-in-up"
         >
           Selected Projects <br />
@@ -89,7 +89,7 @@ const Projects = () => {
         </h3>
 
         {/* Project grid */}
-        <div className="mt-20 grid grid-cols-1 grid-rows-1 md:grid-cols-3 md:grid-rows-2 gap-x-7 gap-y-20">
+        <div className="px-10 mt-20 grid grid-cols-1 grid-rows-1 md:grid-cols-3 md:grid-rows-2 gap-x-7 gap-y-20">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
@@ -104,7 +104,7 @@ const Projects = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-24 px-10 relative">
+        <div className="mt-24 md:px-10 px-1 relative">
           <h2
             className="text-center pb-1 text-3xl border-b border-b-[#868e96] mb-14 md:w-[15%] w-full mx-auto"
             data-aos="zoom-in-up"
@@ -113,7 +113,7 @@ const Projects = () => {
           </h2>
 
           <h3
-            className="md:text-[85px] md:leading-[85px] text-[45px] md:w-[70%] w-full"
+            className="md:text-[85px] md:leading-[85px] px-3 text-[45px] md:w-[70%] w-full"
             data-aos="zoom-in-up"
           >
             Turning Ideas into Reality with fine design and development. Got a
@@ -123,14 +123,11 @@ const Projects = () => {
           <button
             data-aos="zoom-in-up"
             type="button"
-            className="text-[var(--nav-color)] flex items-center md:text-[100px] text-[40px] md:gap-x-1 gap-x-2 md:mt-10 md:mr-10 mt-12
+            className="text-[var(--nav-color)] flex items-center md:text-[90px] text-[50px] md:gap-x-1 gap-x-2 md:mt-10 md:mr-10 mt-12
         md:float-right hover:border-b-2 hover:border-b-[var(--foreground)] hover:text-[var(--foreground)]"
             onClick={handleShowModal}
           >
-            <ArrowRight
-              size={100}
-              className="text-inherit hover:text-inherit"
-            />
+            <ArrowRight size={90} className="text-inherit hover:text-inherit" />
             <span>Let&apos;s Collab</span>
           </button>
         </div>
