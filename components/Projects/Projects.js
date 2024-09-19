@@ -21,6 +21,63 @@ const Projects = () => {
     });
   };
 
+  const projects = [
+    {
+      img: `/Images/home.webp`,
+      title: "Laborich Inc",
+      description:
+        "Designed and developed the official landing page for Laborich Inc., a company offering relocation pathways, bill payment solutions, and virtual cards.",
+      link: `https://www.laborich.com`,
+      github: `https://github.com/Muhtoyyib`,
+      skills: ["next.js", "sass", "api", "aos"],
+    },
+    {
+      img: `/Images/uniskills.webp`,
+      title: "UniSkills",
+      description:
+        "Contributed significantly to UniSkills as an intern, leveraging HTML, CSS, and JavaScript. Later transitioned to a full-time remote role, where I led the API integration efforts, gaining valuable experience in collaboration and large-scale project management.",
+      link: `https://uniskills.net/`,
+      github: `https://github.com/Muhtoyyib`,
+      skills: ["html", "css", "javascript", "react", "material ui", "api"],
+    },
+    {
+      img: `/Images/tulupurse.webp`,
+      title: "TuluPurse",
+      description:
+        "Joined TuluPurse for a 2-month contract, actively contributing to the project. Led the web application's API integration for a month, further enhancing my technical skills.",
+      link: `https://purse.tulupay.com/`,
+      github: `https://github.com/Muhtoyyib`,
+      skills: ["next.js", "tailwindcss", "api", "context api"],
+    },
+    {
+      img: `/Images/roa_clothing.webp`,
+      title: "ROA Clothing",
+      description:
+        "Built an e-commerce website for ROA Clothing, leveraging knowledge gained from a comprehensive course. While the core functionalities were derived from the course material, I was able to personalize the website by adding unique features, demonstrating my strong understanding of the codebase.",
+      link: `https://roa-clothing.netlify.app/`,
+      github: `https://github.com/Muhtoyyib/ROA-Clothing`,
+      skills: ["react", "css", "api", "context api", "redux"],
+    },
+    {
+      img: `/Images/portfolio.webp`,
+      title: "My Portfolio Website",
+      description:
+        "This website serves as my professional online portfolio, showcasing my skills and experience.",
+      link: `https://akande-olalekan-toheeb.vercel.app/`,
+      github: `https://github.com/Muhtoyyib/akande-olalekan-toheeb`,
+      skills: ["next.js", "tailwindcss", "aos", "email.js"],
+    },
+    {
+      img: `/Images/payfyr.webp`,
+      title: "Payfyr Waitlist",
+      description:
+        "Designed and developed a waitlist page for Payfyr, a financial services company.",
+      link: `https://payfyr.vercel.app/`,
+      github: `https://github.com/Muhtoyyib/payfyr-waitlist`,
+      skills: ["react", "css", "bootstrap", "api", "sendgrid"],
+    },
+  ];
+
   return (
     <>
       <Navigation />
@@ -35,13 +92,18 @@ const Projects = () => {
         </h3>
 
         {/* Project grid */}
-        <div className="mt-20 grid grid-cols-1 grid-rows-1 md:grid-cols-3 md:grid-rows-2 gap-x-7 gap-y-12">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+        <div className="mt-20 grid grid-cols-1 grid-rows-1 md:grid-cols-3 md:grid-rows-2 gap-x-7 gap-y-20">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              img={project.img}
+              title={project.title}
+              des={project.description}
+              link={project.link}
+              github={project.github}
+              skills={project.skills}
+            />
+          ))}
         </div>
 
         {/* CTA */}
