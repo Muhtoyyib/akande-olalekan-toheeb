@@ -46,6 +46,15 @@ const Navigation = () => {
             <li className="mb-2">
               <Link
                 className=" text-[20px] text-[var(--nav-color)] pb-[1px] tracking-wider border-b border-b-[var(--nav-color)]  hover:border-b-[var(--nav-hover)] hover:text-[var(--nav-hover)] hover:font-[900] font-bold"
+                href={`/`}
+                onClick={toggleMenu}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link
+                className=" text-[20px] text-[var(--nav-color)] pb-[1px] tracking-wider border-b border-b-[var(--nav-color)]  hover:border-b-[var(--nav-hover)] hover:text-[var(--nav-hover)] hover:font-[900] font-bold"
                 href={`/about`}
                 onClick={toggleMenu}
               >
