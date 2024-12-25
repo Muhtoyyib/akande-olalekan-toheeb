@@ -22,6 +22,24 @@ const Projects = () => {
 
   const projects = [
     {
+      img: `/Images/Careerbox (1).webp`,
+      title: "CareerBox",
+      description:
+        "While at MSME Ecosystem, I developed CareerBox.ca, a Canadian career resources platform. This platform empowers job seekers in Canada with the tools and guidance they need to navigate their career journeys.",
+      link: `https://payfyr.vercel.app/`,
+      github: `https://github.com/Muhtoyyib/`,
+      skills: ["react", "css", "api", "tailwindCSS", "Next.js"],
+    },
+    {
+      img: `/Images/Converted Image.png`,
+      title: "NamelessShop E-commerce",
+      description:
+        "Contributing heavily to the development and launch of Nameless Shop, an e-commerce platform built for product owners.",
+      link: `https://namelessshop.biz/`,
+      github: `https://github.com/TechTummy/nameless-frontend`,
+      skills: ["react", "css", "api", "context api", "redux", "tailwindCSS"],
+    },
+    {
       img: `/Images/home.webp`,
       title: "Laborich Inc",
       description:
@@ -43,20 +61,12 @@ const Projects = () => {
       img: `/Images/tulupurse.webp`,
       title: "TuluPurse",
       description:
-        "Joined TuluPurse for a 2-month contract, actively contributing to the project. Led the web application's API integration for a month, further enhancing my technical skills.",
+        "Joined TuluPurse for a 2-month, actively contributing to the project. Led the web application's API integration for a month, further enhancing my technical skills.",
       link: `https://purse.tulupay.com/`,
       github: `https://github.com/Muhtoyyib`,
       skills: ["next.js", "tailwindcss", "api", "context api"],
     },
-    {
-      img: `/Images/roa_clothing.webp`,
-      title: "ROA Clothing",
-      description:
-        "Built an e-commerce website for ROA Clothing, leveraging knowledge gained from a comprehensive course. While the core functionalities were derived from the course material, I was able to personalize the website by adding unique features, demonstrating my strong understanding of the codebase.",
-      link: `https://roa-clothing.netlify.app/`,
-      github: `https://github.com/Muhtoyyib/ROA-Clothing`,
-      skills: ["react", "css", "api", "context api", "redux"],
-    },
+
     {
       img: `/Images/portfolio.webp`,
       title: "My Portfolio Website",
@@ -65,15 +75,6 @@ const Projects = () => {
       link: `https://akande-olalekan-toheeb.vercel.app/`,
       github: `https://github.com/Muhtoyyib/akande-olalekan-toheeb`,
       skills: ["next.js", "tailwindcss", "aos", "email.js"],
-    },
-    {
-      img: `/Images/payfyr.webp`,
-      title: "Payfyr Waitlist",
-      description:
-        "Designed and developed a waitlist page for Payfyr, a financial services company.",
-      link: `https://payfyr.vercel.app/`,
-      github: `https://github.com/Muhtoyyib/payfyr-waitlist`,
-      skills: ["react", "css", "bootstrap", "api", "sendgrid"],
     },
   ];
 
